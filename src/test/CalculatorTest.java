@@ -72,7 +72,7 @@ class CalculatorTest {
     void divPositiveCase() {
 
         assertEquals(10, Calculator.div(100, 10));
-        assertEquals(2.5, Calculator.div(10, 4)); //not passed, fixed - to double
+        assertEquals(2.5, Calculator.div(10, 4), 0.01); //not passed, fixed - to double
         assertEquals(-20, Calculator.div(-100, 5));
         assertEquals(-1, Calculator.div(0,0)); //not passed, fixed with if
         assertEquals(0, Calculator.div(0, 10));
@@ -82,7 +82,7 @@ class CalculatorTest {
     void divNegativeCase() {
 
         assertNotEquals(50, Calculator.div(100, 10));
-        assertNotEquals(2.55, Calculator.div(10, 4)); //not passed, fixed - to double
+        assertNotEquals(2.55, Calculator.div(10, 4), 0.01); //not passed, fixed - to double
         assertNotEquals(20, Calculator.div(-100, 5));
         assertNotEquals(1, Calculator.div(0,0)); //not passed, fixed with if
         assertNotEquals(-1, Calculator.div(0, 10));

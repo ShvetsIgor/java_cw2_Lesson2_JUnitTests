@@ -35,7 +35,7 @@ public class DemoAppl {
             sum += arr[j];
         }
 
-        return (double)(sum / (arr.length));
+        return (double)sum / (arr.length);
     }
 
     public static int maxValue (int[] arr) {
